@@ -38,7 +38,7 @@ function calculateFormula(node) {
     return results
 }
 
-export function tokenizeFormula(formula) {
+function tokenizeFormula(formula) {
     const rootGroup = { type: 'group', value: [], parent: null }
     let lastNumber = null
     let lastMolecule = null
